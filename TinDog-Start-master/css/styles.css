@@ -14,6 +14,22 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 .container-fluid {
     padding:  3% 15%;
 }
@@ -52,30 +68,63 @@ h1 {
     transform: rotate(20deg);
 }
 
-/*Features*/
-
+/*Features Section*/
 #features {
+    margin: 7% 15%;
     text-align: center;
 }
 
-.fas {
+.icon {
+    margin-bottom: 1rem;
     font-size: 6rem;
     color: #ef8172;
 }
 
-.fas:hover {
+.icon:hover {
     color: #ff4c68;
 }
 
-.feature-name {
-    font-size: 1.5rem;
-    font-weight: bold;
+/*Testimonial Section*/
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
 }
 
-.feature-descr {
-    color: #8f8f8f;
+.testimonial-img {
+    width: 20%;
+    margin: 20px;
+    border-radius: 50%;
 }
 
-.col-lg-4 {
-    margin: 100px 0px;
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/*Press Section*/
+#press {
+    padding-bottom: 5%;
+    background-color: #ef8172;
+    text-align: center;
+}
+
+.press-logo-img {
+    width: 15%;
+    margin: 20px 20px 15px;
+}
+
+
+/*Pricing Section*/
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2% 3% 1%;
+}
+
+.first-btn,
+.second-btn {
+    margin-top: 55px;
 }
