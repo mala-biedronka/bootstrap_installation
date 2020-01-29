@@ -31,7 +31,7 @@ p {
 }
 
 .container-fluid {
-    padding:  3% 15%;
+    padding:  3% 15% 10%;
 }
 
 /*Navigation Bar*/
@@ -66,12 +66,16 @@ p {
 .top-img {
     width: 60%;
     transform: rotate(20deg);
+    position: absolute;
+    right: 30%;
 }
 
 /*Features Section*/
 #features {
-    margin: 7% 15%;
+    padding: 7% 15%;
     text-align: center;
+    background-color: white;
+    position: relative;
 }
 
 .icon {
@@ -127,4 +131,48 @@ p {
 .first-btn,
 .second-btn {
     margin-top: 55px;
+}
+
+/*@media*/
+
+@media (max-width: 1028px) {
+    .top-img {
+        position: static;
+        transform: rotate(0);
+    }
+
+    .row {
+        text-align: center;
+    }
+}
+
+/*Call to Action Section*/
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 8% 15% 4%;
+}
+
+.cta-heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: white;
+}
+
+/*Footer Section*/
+
+#footer {
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+}
+
+.download-button-footer {
+    margin: 5% 1%;
+}
+
+.foot-icon {
+    margin: 2rem 1rem;
 }
