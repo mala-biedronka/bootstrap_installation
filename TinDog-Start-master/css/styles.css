@@ -1,41 +1,35 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-}
-
-h1 {
+h1, h2, h3 {
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    color: white;
-}
-
-h2 {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 800;
-}
-
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 p {
     color: #8f8f8f;
 }
 
+/*Containers*/
 .container-fluid {
-    padding:  3% 15% 10%;
+    padding:  7% 15%;
+}
+
+/*Headings*/
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /*Navigation Bar*/
-
 .navbar {
     padding: 0;
     margin-bottom: 60px;
@@ -57,12 +51,21 @@ p {
 
 
 /*Download Buttons*/
-
 .download-button {
     margin: 3% 5% 3% 0;
 }
 
-/*Title Image*/
+
+/*Title Section*/
+#title {
+    background-color: #ff4c68;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding:  3% 15% 10%;
+}
+
 .top-img {
     width: 60%;
     transform: rotate(20deg);
@@ -70,10 +73,19 @@ p {
     right: 30%;
 }
 
+@media (max-width: 1028px) {
+    .top-img {
+        position: static;
+        transform: rotate(0);
+    }
+
+    .row {
+        text-align: center;
+    }
+}
+
 /*Features Section*/
 #features {
-    padding: 7% 15%;
-    text-align: center;
     background-color: white;
     position: relative;
 }
@@ -88,9 +100,12 @@ p {
     color: #ff4c68;
 }
 
+.feature-title {
+    font-size: 1.5rem;
+}
+
 /*Testimonial Section*/
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: white;
 }
@@ -101,15 +116,15 @@ p {
     border-radius: 50%;
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /*Press Section*/
 #press {
     padding-bottom: 5%;
     background-color: #ef8172;
-    text-align: center;
 }
 
 .press-logo-img {
@@ -121,7 +136,6 @@ p {
 /*Pricing Section*/
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column {
@@ -133,40 +147,19 @@ p {
     margin-top: 55px;
 }
 
-/*@media*/
-
-@media (max-width: 1028px) {
-    .top-img {
-        position: static;
-        transform: rotate(0);
-    }
-
-    .row {
-        text-align: center;
-    }
+.price-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /*Call to Action Section*/
-
 #cta {
     background-color: #ff4c68;
-    text-align: center;
-    padding: 8% 15% 4%;
-}
-
-.cta-heading {
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    color: white;
 }
 
 /*Footer Section*/
-
 #footer {
-    text-align: center;
     background-color: white;
-    padding-top: 50px;
 }
 
 .download-button-footer {
